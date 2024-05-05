@@ -9,7 +9,7 @@ public abstract class Employee implements Employable {
     private String hireDate;
     private String position;
 
-    public Employee(String name, double salary, int id, String hireDate, String positsion) {
+    public Employee(String name, double salary, int id, String hireDate, String position) {
         this.name = name;
         this.salary = salary;
         this.id = id;
@@ -25,15 +25,29 @@ public abstract class Employee implements Employable {
         return salary;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public String getHireDate() {
         return hireDate;
     }
 
     public String getPosition() {
         return position;
+    }
+
+    public int hashCode() {
+        return id;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Employee other = (Employee) obj;
+        return id == other.id;
     }
 }
