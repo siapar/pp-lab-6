@@ -9,7 +9,7 @@ public abstract class Employee implements Employable {
     private String hireDate;
     private String position;
 
-    public Employee(String name, double salary, int id, String hireDate, String positsion) {
+    public Employee(String name, double salary, int id, String hireDate, String position) {
         this.name = name;
         this.salary = salary;
         this.id = id;
