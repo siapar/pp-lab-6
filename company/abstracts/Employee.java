@@ -9,10 +9,12 @@ public abstract class Employee implements Employable {
     private String hireDate;
     private String position;
 
-    public Employee(String name, double salary, int id) {
+    public Employee(String name, double salary, int id, String hireDate, String positsion) {
         this.name = name;
         this.salary = salary;
         this.id = id;
+        this.hireDate = hireDate;
+        this.position = position;
     }
 
     public String getName() {
@@ -21,6 +23,10 @@ public abstract class Employee implements Employable {
 
     public double getSalary() {
         return salary;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getHireDate() {
