@@ -6,6 +6,8 @@ public abstract class Employee implements Employable {
     private String name;
     private double salary;
     private int id;
+    private String hireDate;
+    private String position;
 
     public Employee(String name, double salary, int id) {
         this.name = name;
@@ -19,5 +21,13 @@ public abstract class Employee implements Employable {
 
     public double getSalary() {
         return salary;
+    }
+
+    public String getHireDate() {
+        return hireDate;
+    }
+
+    public String getPosition() {
+        return position;
     }
 }
