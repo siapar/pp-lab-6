@@ -8,7 +8,7 @@ public class Main {
         Worker worker3 = new Worker("Kamil", 4100.0, 3);
         Worker worker4 = new Worker("Julia", 4500.0, 4);
 
-        Manager manager = new Manager("Dominik", 6000.0, 101);
+        Manager manager = new Manager("Dominik", 6000.0, 10);
 
         System.out.println("Worker 1 salary: $" + worker1.getSalary());
         System.out.println("Worker 2 salary: $" + worker2.getSalary());
