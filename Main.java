@@ -10,7 +10,7 @@ public class Main {
         Worker worker3 = new Worker("Kamil", 4100.0, 3, "2022-11-26", "Worker");
         Worker worker4 = new Worker("Julia", 4500.0, 4, "2022-03-05", "Worker");
 
-        Manager manager = new Manager("Dominik", 6000.0, 101, "2021-02-04", "Manager");
+        Manager manager = new Manager("Dominik", 6000.0, 10, "2021-02-04", "Manager");
 
         ArrayList<Employee> employees = new ArrayList<>();
 
